@@ -98,7 +98,7 @@
 	}
 
 	h2 {
-		font-size: 2.25em;
+		font-size: 2em;
 		letter-spacing: -2px;
 		line-height: 1.25em;
 	}
@@ -468,7 +468,7 @@
 		padding: 2em;
 
 		&.style2 {
-			padding: 3.5em 2.5em 3.5em 2.5em;
+			padding: 2.5em 2.5em 2.5em 2.5em;
 		}
 	}
 
@@ -600,6 +600,49 @@
 
 			&.down {
 				background-image: url('images/dark-arrow.svg');
+			}
+		}
+	}
+
+/* Circular images */
+.headshot {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	background: url('../../images/Michael_Headshot_square.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    //width: 50%;
+    margin: 0 auto;
+    transition: background-image 0.5s;
+}
+.headshot:hover {
+	background: url('../../images/logo_jpg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Light */
+
+	.light {
+		color: #000;
+
+		a {
+			color: #000;
+		}
+
+		.button.style2 {
+			border-color: inherit;
+			background-color: rgba(64, 64, 64, 0.05);
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+
+			&.down {
+				background-image: url('images/arrow.svg');
 			}
 		}
 	}
@@ -808,8 +851,8 @@
 /* Intro */
 
 	#intro {
-		background: url('images/overlay.png'), url('../../images/intro.jpg');
-		background-size: 256px 256px, cover;
+		background: url('../../images/capitol.png'), url('../../images/intro.jpg');
+		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
@@ -827,6 +870,24 @@
 /* Two */
 
 	#two {
+		background: url('images/overlay.png'), url('../../images/two.jpg');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Three */
+
+	#three {
+		background: url('images/overlay.png'), url('../../images/one.jpg');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Four */
+
+	#four {
 		background: url('images/overlay.png'), url('../../images/two.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -891,7 +952,7 @@
 
 	#footer {
 		position: relative;
-		height: 5em;
+		height: auto;
 		line-height: 5em;
 		margin: 0;
 		background: #39454b;
@@ -1119,19 +1180,19 @@
 		/* Main */
 			.main.style2 {
 				.content {
-					width: 40%;
+					width: 80%;
 				}
 
 				&.right {
 					.content {
-						left: 60%;
+						left: 20%;
 					}
 				}
 
 				&.inactive {
 					&.left {
 						.content {
-							left: -40%;
+							left: -80%;
 						}
 					}
 				}
@@ -1162,19 +1223,19 @@
 		/* Main */
 			.main.style2 {
 				.content {
-					width: 50%;
+					width: 85%;
 				}
 
 				&.right {
 					.content {
-						left: 50%;
+						left: 15%;
 					}
 				}
 
 				&.inactive {
 					&.left {
 						.content {
-							left: -50%;
+							left: -85%;
 						}
 					}
 				}
@@ -1198,19 +1259,19 @@
 		/* Main */
 			.main.style2 {
 				.content {
-					width: 60%;
+					width: 90%;
 				}
 
 				&.right {
 					.content {
-						left: 40%;
+						left: 10%;
 					}
 				}
 
 				&.inactive {
 					&.left {
 						.content {
-							left: -60%;
+							left: -90%;
 						}
 					}
 				}
@@ -1238,6 +1299,8 @@
 					top: 0;
 					height: auto;
 					line-height: inherit;
+                    padding-top: .5em;
+                    padding-bottom: .5em;
 				}
 			}
 
